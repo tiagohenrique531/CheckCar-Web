@@ -206,6 +206,72 @@ button:hover, input[type="submit"]:hover {
   transform: scale(1.05);
 }
 
+ .container {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  table {
+    background-color: #444;
+    border-collapse: collapse;
+    border-radius: 8px;
+    overflow: hidden;
+    min-width: 600px;
+  }
+
+  th, td {
+    border: 1px solid #555;
+    padding: 12px 15px;
+    text-align: center;
+  }
+
+  th {
+    background-color: #555;
+    font-weight: normal;
+  }
+
+  .acoes {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100%;
+  }
+
+  .btns {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin: 10px 0;
+  }
+
+  .btn-editar {
+    background: transparent;
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 5px 15px;
+    color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .btn-editar:hover {
+    background: #666;
+  }
+
+  .btn-excluir {
+    background: none;
+    border: none;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .btn-excluir:hover {
+    color: #ff5555;
+  }
+
 /* --- 🔹 RESPONSIVIDADE --- */
 
 /* Tablets (até 1024px) */
@@ -273,4 +339,14 @@ button:hover, input[type="submit"]:hover {
   }
 
   table { width: 100%; font-size: 0.9rem; }
+}
+textarea {
+  margin-top: 8px;
+  width: 90%;
+  background: #3a3a3a;
+  border: 1px solid #555;
+  border-radius: 4px;
+  color: #fff;
+  resize: none;
+  padding: 5px;
 }

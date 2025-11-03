@@ -1,3 +1,12 @@
+<?php 
+
+    session_start();
+    include_once('./includes/conexao.php');
+    
+    $sql = "SELECT * FROM perguntas";
+    $result = $conn->query($sql);
+
+?>
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
@@ -53,7 +62,39 @@
       <span>5</span>
     </div>
   </div>
+        <div class="container">
+  
+  <form action="./actions/salvar_checklist.php" method="POST">
+  <input type="hidden" name="idChecklist" value="1"> <!-- exemplo -->
 
+  <?php while($row = $result->fetch_assoc()) { ?>
+  <table>
+    <thead>
+      <tr>
+        <th>Pergunta nº<?php echo $row['id']; ?></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td><?php echo htmlspecialchars($row['texto']); ?></td>
+      </tr>
+      <tr>
+        <td>
+          <input type="radio" name="resposta[<?php echo $row['id']; ?>]" value="OK"> OK
+          <input type="radio" name="resposta[<?php echo $row['id']; ?>]" value="NOK"> NOK
+          <input type="radio" name="resposta[<?php echo $row['id']; ?>]" value="NA"> N/A
+          <br>
+          <textarea name="observacao[<?php echo $row['id']; ?>]" rows="2" placeholder="Observações..."></textarea>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <?php } ?>
+
+  <button type="submit">Salvar Checklist</button>
+</form>
+
+</div>
     </main>
 </body>
 </html>

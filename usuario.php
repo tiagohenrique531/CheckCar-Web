@@ -5,7 +5,7 @@
     session_start();
     include_once('./includes/conexao.php');
     
-  $sql = "SELECT idUsuario, nome, cpf, email, tipo, cep, rua, bairro, cidade, estado FROM usuario";
+  $sql = "SELECT id, nome, cpf, email, tipo, cep, rua, bairro, cidade, estado FROM usuario";
   $result = $conn->query($sql);
 
 
@@ -81,7 +81,7 @@
         if ($result->num_rows > 0) {
             while ($row = $result->fetch_assoc()) {
                 echo "<tr>
-                        <td>".$row['idUsuario']."</td>
+                        <td>".$row['id']."</td>
                         <td>".$row['nome']."</td>
                         <td>".$row['cpf']."</td>
                         <td>".$row['email']."</td>
