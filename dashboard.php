@@ -3,17 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tela Veiculos</title>
-    <link rel="stylesheet" href="./assets/css/style3.css">
+    <title>tela inicial</title>
+    <link rel="stylesheet" href="./assets/css/style2.css">
 </head>
 <body>
     <header>
         <nav>
             <ul>
             <div class="div1"><img src="./assets/img/logoo.png" alt="logo" class="img"> </div>
-            <li><a href="index.php"> Dashbord </a></li>
+            <li><a href="deshboard.php"> Dashbord </a></li>
             <li><a href="usuario.php"> Usuário </a></li>
-            <li><a href="checklist.html"> Checklist</a></li>
+            <li><a href="checklist.php"> Checklist</a></li>
             <li><a href="veiculo.php"> Veículo </a></li>
             <div class="div1"><img src="./assets/img/logo_novo.png" alt="logo" class="img"> </div>
             
@@ -23,17 +23,8 @@
 
     </header>
     <main>
-        <h1>VEÍCULOS</h1>
-        <h3>VEJA OS VEÍCULOS CADASTRADOS EM NOSSO SISTEMA</h3>
-        
-    <div class="container1">
-    <div class="card">
-      <img src="./assets/img/perfil.png" alt="Ícone">
-      <p>Veiculos cadastrados</p>
-      <span>5</span>
-    </div>
-  </div>
-
+        <h1>DASHBOARD</h1>
+        <h3>VISUALIZE SEUS GRÁFICOS</h3>
     </main>
 </body>
 </html>

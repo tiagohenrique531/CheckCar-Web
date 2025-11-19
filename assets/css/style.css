@@ -100,6 +100,10 @@ input[type="submit"]{
     font-weight: bolder;
     cursor: pointer;
 }
+.verificar {
+    width: 300px;    
+    margin: 0 auto;   
+}
 button {
   color: #FFF;
     background: radial-gradient(circle, #3f3e3e 0%, #424242 100%);
@@ -114,6 +118,38 @@ button {
     /*font-family: poppins;*/
     font-weight: bolder;
     cursor: pointer;
+}
+
+@media (max-width: 1024px) {
+  input[type="submit"]{
+    color: #FFF;
+    background: #5A5A5A;
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 20%;
+    height: 7vh;
+    margin: 10px 0 10px 30%;
+    border-radius: 5vh;
+    border: 0;
+    /*font-family: poppins;*/
+    font-weight: bolder;
+    cursor: pointer;
+}
+  button {
+  color: #FFF;
+    background: radial-gradient(circle, #3f3e3e 0%, #424242 100%);
+    
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    width: 20.5%;
+    height: 7vh;
+    margin: 40px 0 10px 3%;
+    margin: 10px 0 10px 0%;
+    border-radius: 5vh;
+    border: 0;
+    /*font-family: poppins;*/
+    font-weight: bolder;
+    cursor: pointer;
+}
 }
 
 /* Media Queries */

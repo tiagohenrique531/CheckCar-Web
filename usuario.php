@@ -31,9 +31,9 @@
         <nav>
             <ul>
             <div class="div1"><img src="./assets/img/logoo.png" alt="logo" class="img"> </div>
-            <li><a href="index.php"> Dashbord </a></li>
+            <li><a href="deshboard.php"> Dashbord </a></li>
             <li><a href="usuario.php"> Usuário </a></li>
-            <li><a href="checklist.html"> Checklist</a></li>
+            <li><a href="checklist.php"> Checklist</a></li>
             <li><a href="veiculo.php"> Veículo </a></li>
             <div class="div1"><img src="./assets/img/logo_novo.png" alt="logo" class="img"> </div>
             
@@ -92,8 +92,8 @@
                         <td>".$row['cidade']."</td>
                         <td>".$row['estado']."</td>
                         <td>
-                            <a href='./actions/editar_usuario.php?id=".$row['idUsuario']."' class='btn-editar'>Editar</a>
-                            <a href='./actions/excluir_usuario.php?id=".$row['idUsuario']."' class='btn-excluir' onclick=\"return confirm('Deseja realmente excluir este usuário?');\"><i class='fa fa-trash'></i></a>
+                            <a href='./actions/editar_usuario.php?tipo=usuario&id=".$row['id']."' class='btn-editar'>Editar</a>
+                            <a href='./actions/excluir_usuario.php?tipo=usuario&id=".$row['id']."' class='btn-excluir' onclick=\"return confirm('Deseja realmente excluir este usuário?');\"><i class='fa fa-trash'></i></a>
 
                         </td>
                     </tr>";
